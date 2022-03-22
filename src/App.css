@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: rebeccapurple;
+  margin-bottom: 1rem;
+}
+
+.App {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+li {
+  color: white;
+  list-style: none;
+}
+
+ul {
+  margin-top: 2rem;
+}
+
+.promo {
+  color: red;
+}
