@@ -8,13 +8,18 @@ h1 {
   margin-bottom: 1rem;
 }
 
+h3{
+  color: white
+}
+
 .App {
-  height: 80vh;
+  height: 150vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   justify-content: center;
+  margin-bottom: 2rem;
 }
 
 li {
@@ -28,4 +33,267 @@ ul {
 
 .promo {
   color: red;
+}
+
+.hidden {
+  display: none;
+}
+
+.compteur{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.compteur button {
+  padding: 10px;
+  margin-bottom: 0.5rem;
+  width: 125px;
+
+  position: relative;
+  background-color: rgb(228, 228, 228);
+  border-radius: 2em;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  cursor:pointer;
+  user-select:none;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s; /* Safari */
+}
+
+.compteur button:hover {
+  transition-duration: 0.1s;
+  background-color: yellowgreen;
+  color: whitesmoke;
+}
+
+.compteur button:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 2em;
+  left: 0;
+  top:0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+  box-shadow: 0 0 10px 40px white;
+}
+
+.compteur button:active:after {
+  box-shadow: 0 0 0 0 white;
+  position: absolute;
+  border-radius: 2em;
+  left: 0;
+  top:0;
+  opacity: 1;
+  transition: 0s;
+}
+
+.compteur button:active {
+  top: 1px;
+}
+
+#reset-btn {
+  background-color: red;
+  color : white
+}
+
+#reset-btn:hover {
+  transition-duration: 0.1s;
+  background-color: rgb(175, 0, 0);
+  color: whitesmoke;
+}
+
+form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+label{
+  color:white
+}
+
+.calculatrice form{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+input, select, button  {
+  height: 30px;
+}
+
+.calculatrice input[type="submit"],.calculatrice select{
+  width: 40px;
+  margin: 0 1rem;
+}
+
+.calculatrice input[type="submit"]:hover {
+  transition-duration: 0.1s;
+  background-color: yellowgreen;
+  color: whitesmoke;
+}
+
+
+.calculatrice {
+  margin-top: 2rem;
+}
+
+#nb1-container, #nb2-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.form-todo, .tasks-container {
+  width: 500px;
+  padding: 20px;
+}
+
+.tasks-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.form-todo form{
+
+  margin-top: 0;
+}
+
+.form-todo h1{
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+.form-todo .form-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.todolist-container{
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 700px;
+  background-color: #3f3f3f;
+  box-shadow: 0 0 2.5em black;
+}
+
+.todolist-container h2{
+  text-align: left;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.form-todo label {
+  flex-grow: 3;
+  text-align: left;
+}
+
+.form-todo textarea, .form-todo input {
+  flex-grow: unset;
+  width: 350px;
+}
+
+#priority{
+  justify-content: space-between;
+}
+
+#priority label{
+  margin-right: 3.75em;
+}
+
+#priority input{
+  flex-grow:unset;
+  width: 150px;
+}
+
+.form-todo textarea, .form-todo input, .form-todo select {
+  background-color: whitesmoke!important;
+  border: 0;
+}
+
+.listItem {
+  background-color: whitesmoke;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.listItem p {
+  color: black;
+}
+
+.listItem .left-container h3{
+  margin-right: 1.5rem;
+
+}
+.listItem .right-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.listItem .upper-container{
+  display: flex;
+  flex-direction: row;
+}
+.listItem .lower-container{
+  text-align: justify;
+  width: 80%;
+}
+
+.right-container button{
+  height: 30px;
+  margin: 0.5rem 0;
+}
+
+button.done:hover{
+  transition-duration: 0.1s;
+  background-color: yellowgreen;
+  color: whitesmoke;
+}
+
+button.delete:hover {
+  transition-duration: 0.1s;
+  background-color: red;
+  color: whitesmoke;
+}
+
+.form-todo input[type="submit"]:hover {
+  transition-duration: 0.1s;
+  background-color: yellowgreen!important;
+  color: whitesmoke;
+}
+
+.urgent{
+  color: red!important;
+}
+
+.normal{
+  color: yellowgreen!important;
+}
+
+.stripes {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    #3f3f3f 0px,
+    #3f3f3f 20px,
+    #6b6b6b 20px,
+    #6b6b6b 40px
+  );
+}
+
+.weather-container{
+  margin-top: 4rem;
 }
